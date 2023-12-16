@@ -1,0 +1,16 @@
+server:
+ port: 8081
+ 
+spring:
+ datasource:
+  driver-class-name: org.postgresql.Driver
+  url: jdbc:postgresql://produtodb:5432/produto
+  username: admin
+  password: 123456
+ jpa:
+  hibernate:
+   ddl-auto: create-drop
+  show_sql: true
+  properties:
+   hibernate:
+    dialect: org.hibernate.dialect.PostgreSQLDialect

@@ -1,0 +1,22 @@
+version: "3"
+services:
+  produtodb:
+    image: postgres:11
+    environment:
+      - POSTGRES_DB=produto
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=123456
+    ports:
+      - 5432:5432
+  produtoapi:
+    build: './produto'
+    container_name: produtoapi
+    restart: always
+    depends_on: 
+      - produtodb
+    environment:
+      - DB_URL=produtodb
+      - DB_PORT=5432
+      - DB_NAME=produto
+    ports: 
+      - 8081:8081
