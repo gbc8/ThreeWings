@@ -15,8 +15,10 @@ services:
     depends_on: 
       - produtodb
     environment:
-      - DB_URL=produtodb
+      - DB_HOST=produtodb
       - DB_PORT=5432
       - DB_NAME=produto
+      - DB_USERNAME=admin
+      - DB_PASSWORD=123456
     ports: 
       - 8081:8081
