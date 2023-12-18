@@ -10,11 +10,11 @@ import com.gbc8.produto.controlador.exception.NotFoundException;
 @RestControllerAdvice
 public class ProdutoExceptionHandler {
 	@ExceptionHandler(value = { MethodArgumentNotValidException.class })
-    protected ResponseEntity<String> handleMethodArgumentNotValid(MethodArgumentNotValidException ex){
+	protected ResponseEntity<String> handleMethodArgumentNotValid(MethodArgumentNotValidException ex){
 		return ResponseEntity.badRequest().body(ex.getBindingResult().getFieldError().getDefaultMessage());
 	}
 	@ExceptionHandler(value = { NotFoundException.class })
-    protected ResponseEntity<String> handleNotFoundException(NotFoundException ex){
+	protected ResponseEntity<String> handleNotFoundException(NotFoundException ex){
 		return ResponseEntity.badRequest().body(ex.getMessage());
 	}
 }
