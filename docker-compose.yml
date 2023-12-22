@@ -9,7 +9,7 @@ services:
     ports:
       - 5432:5432
   produtoapi:
-    build: './produto'
+    build: './produto-backend'
     container_name: produtoapi
     restart: always
     depends_on: 
@@ -22,3 +22,12 @@ services:
       - DB_PASSWORD=123456
     ports: 
       - 8081:8081
+  produtoui:
+    container_name: produtoui
+    depends_on:
+      - produtoapi
+    build: ./produto-frontend 
+    ports: 
+      - 4200:4200
+    command: > 
+      bash -c "npm install && ng serve --host 0.0.0.0 --port 4200"
