@@ -5,15 +5,15 @@
     </mat-form-field>
     <mat-form-field>
         <mat-label>Nome</mat-label>
-        <input matInput required [(ngModel)]="novoProduto.nome" value="{{data.nome}}">
+        <input matInput required [(ngModel)]="novoProduto.nome" value="{{data.nome}}" maxlength="50">
     </mat-form-field>
     <mat-form-field>
         <mat-label>Categoria</mat-label>
-        <input matInput required [(ngModel)]="novoProduto.categoria" value="{{data.categoria}}">
+        <input matInput required [(ngModel)]="novoProduto.categoria" value="{{data.categoria}}" maxlength="50">
     </mat-form-field>
     <mat-form-field>
         <mat-label>Descricao</mat-label>
-        <textarea matInput [(ngModel)]="novoProduto.descricao" value="{{data.descricao}}"></textarea>
+        <textarea matInput [(ngModel)]="novoProduto.descricao" value="{{data.descricao}}" maxlength="250"></textarea>
     </mat-form-field>
     <mat-form-field floatLabel="always">
         <mat-label>Quantidade</mat-label>

@@ -1,4 +1,4 @@
-INSERT INTO produto (id, nome, categoria, descricao, quantidade) values (5000, 'Harry Potter', 'Livros', 'Série de romances de fantasia escrita por J. K. Rowling. A série narra as aventuras de um jovem chamado Harry James Potter, que descobre aos 11 anos que é um bruxo ao ser convidado para estudar na Escola de Magia e Bruxaria de Hogwarts.	', 10)
+INSERT INTO produto (id, nome, categoria, descricao, quantidade) values (5000, 'Harry Potter', 'Livros', 'Série de romances de fantasia escrita por J. K. Rowling. A série narra as aventuras de um jovem chamado Harry James Potter, que descobre aos 11 anos que é um bruxo ao ser convidado para estudar na Escola de Magia e Bruxaria de Hogwarts.', 10)
 INSERT INTO produto (id, nome, categoria, descricao, quantidade) values (5001, '1984', 'Livros', 'Romance distópico da autoria do escritor britânico George Orwell e publicado em 1949.', 7)
 INSERT INTO produto (id, nome, categoria, descricao, quantidade) values (5002, 'Notebook Acer Nitro 5', 'Eletronicos', '', 15)
 INSERT INTO produto (id, nome, categoria, descricao, quantidade) values (5003, 'TV Samsung', 'Eletronicos', 'Smart TV com 32 polegadas.', 3)
