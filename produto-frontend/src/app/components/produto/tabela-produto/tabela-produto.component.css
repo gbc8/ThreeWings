@@ -1,0 +1,13 @@
+table {
+    width: 100%;
+}
+
+.container {
+    padding: 25px 35px;
+}
+
+.action {
+    display: flex;
+    align-content: left;
+    background-color: black;
+}

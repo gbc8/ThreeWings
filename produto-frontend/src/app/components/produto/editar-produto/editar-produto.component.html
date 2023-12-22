@@ -1,0 +1,26 @@
+<div class="container">
+    <mat-form-field>
+        <mat-label>Id</mat-label>
+        <input matInput value="{{data.id}}" disabled>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Nome</mat-label>
+        <input matInput [(ngModel)]="novoProduto.nome" value="{{data.nome}}">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Categoria</mat-label>
+        <input matInput [(ngModel)]="novoProduto.categoria" value="{{data.categoria}}">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Descricao</mat-label>
+        <textarea matInput [(ngModel)]="novoProduto.descricao" value="{{data.descricao}}"></textarea>
+    </mat-form-field>
+    <mat-form-field floatLabel="always">
+        <mat-label>Quantidade</mat-label>
+        <input matInput type="number" class="example-right-align" [(ngModel)]="novoProduto.quantidade" value="{{data.quantidade}}">
+        <span matTextPrefix>$&nbsp;</span>
+    </mat-form-field>
+    <div class="submit">
+        <button mat-flat-button color="primary" (click)="atualizarProduto()">Atualizar</button>
+    </div>
+</div>
