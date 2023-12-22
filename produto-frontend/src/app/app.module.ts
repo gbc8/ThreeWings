@@ -22,7 +22,6 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     MainNavComponent,
-    CadastroProdutoComponent,
   ],
   imports: [
     BrowserModule,

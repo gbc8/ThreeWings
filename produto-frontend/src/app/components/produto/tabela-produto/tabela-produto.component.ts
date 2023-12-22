@@ -50,9 +50,13 @@ export class TabelaProdutoComponent {
       this.produtoService.editarProduto(result)
       .subscribe(() => {
         this.produtoService.getProdutos()
-          .subscribe((data: Produto[]) => {
+          .subscribe(
+          (data) => {
             this.dataSource = new MatTableDataSource<Produto>(data.sort((a,b) => a.id-b.id));
             this.dataSource.paginator = this.paginator;
+          },
+          (error) => {
+            alert(error.error);
           });
       });
     })

@@ -17,10 +17,9 @@
     </mat-form-field>
     <mat-form-field floatLabel="always">
         <mat-label>Quantidade</mat-label>
-        <input matInput type="number" class="example-right-align" [(ngModel)]="novoProduto.quantidade" value="{{data.quantidade}}">
-        <span matTextPrefix>$&nbsp;</span>
+        <input matInput type="number" min="0" class="example-right-align" [(ngModel)]="novoProduto.quantidade" value="{{data.quantidade}}">
     </mat-form-field>
     <div class="submit">
-        <button mat-flat-button color="primary" (click)="atualizarProduto()">Atualizar</button>
+        <button mat-flat-button color="primary" (click)="atualizarProduto()">Confirmar</button>
     </div>
 </div>

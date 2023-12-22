@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import {ProdutoDTO} from '../components/produto/model/produtoDTO.model'
 import {Produto} from '../components/produto/model/produto.model'
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
@@ -20,7 +21,7 @@ export class ProdutoService {
     return this.http.get<Produto[]>(`${this.produtoApiUrl}/${element.id}`);
   }
 
-  inserirProduto(element: Produto): Observable<Produto> {
+  inserirProduto(element: ProdutoDTO): Observable<Produto> {
     return this.http.post<Produto>(this.produtoApiUrl, element);
   }
 
