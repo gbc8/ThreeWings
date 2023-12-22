@@ -1,11 +1,11 @@
 import {Component, ViewChild} from '@angular/core';
 import {MatPaginator, MatPaginatorModule} from '@angular/material/paginator';
 import {MatTableDataSource, MatTableModule, MatTable} from '@angular/material/table';
-import {Produto} from '../model/produto.model';
+import {Produto} from '../model-produto/produto.model';
 import {ProdutoService} from 'src/app/service/produto.service';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
-import {ProdutoInfoDialogComponent} from '../produto-info-dialog/produto-info-dialog.component';
+import {DetalhesProdutoComponent} from '../detalhes-produto/detalhes-produto.component';
 import {EditarProdutoComponent} from '../editar-produto/editar-produto.component';
 import {MatDialog} from '@angular/material/dialog';
 
@@ -36,7 +36,7 @@ export class TabelaProdutoComponent {
   }
 
   viewProduto(produto: Produto): void {
-    this.dialog.open(ProdutoInfoDialogComponent, {
+    this.dialog.open(DetalhesProdutoComponent, {
       data: produto,
     });
   }

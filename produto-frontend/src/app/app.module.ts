@@ -4,7 +4,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { MainNavComponent } from './components/main-nav/main-nav.component';
+import { MenuComponent } from './components/menu/menu.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -12,16 +12,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { TabelaProdutoComponent } from './components/produto/tabela-produto/tabela-produto.component';
 import { MatTableModule } from '@angular/material/table';
-import { CadastroProdutoComponent } from './components/produto/cadastro-produto/cadastro-produto.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ProdutoInfoDialogComponent } from './components/produto/produto-info-dialog/produto-info-dialog.component';
+import { DetalhesProdutoComponent } from './components/produto/detalhes-produto/detalhes-produto.component';
 import { EditarProdutoComponent } from './components/produto/editar-produto/editar-produto.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainNavComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +34,7 @@ import { FormsModule } from '@angular/forms';
     TabelaProdutoComponent,
     MatTableModule,
     HttpClientModule,
-    ProdutoInfoDialogComponent,
+    DetalhesProdutoComponent,
     MatDialogModule,
     EditarProdutoComponent,
     FormsModule
