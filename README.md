@@ -32,7 +32,7 @@ Execute `mvn clean install -DskipTests` e `mvn spring-boot:run` dentro do diret�
 
 ###### Backend com variáveis de ambiente:
 Execute `mvn clean install -DskipTests` dentro do diretório `produto-backend`.\
-Execute `java -D"DB_HOST={url}" -D"DB_PORT={porta}" -D"DB_NAME={nome}" -D"DB_USERNAME={dbName}" -D"DB_PASSWORD={dbPassword}" -jar $programa.jar` dentro do diretório `produto-backend/target`.
+Execute `java -D"DB_HOST={url}" -D"DB_PORT={porta}" -D"DB_NAME={nome}" -D"DB_USERNAME={dbName}" -D"DB_PASSWORD={dbPassword}" -jar {Nome do Programa}.jar` dentro do diretório `produto-backend/target`.
 
 Nota: Substitua `{valor}` pelos valores da máquina local. `{}` não devem ser incluídas.
 
